@@ -38,6 +38,7 @@
                     // Handles the incorrect operator
                     echo "Error! Missing operation";
             }
+            $output = round($output, 5);
             // Exports the numeric result
             echo "<p>Result: $output</p>";
         ?>

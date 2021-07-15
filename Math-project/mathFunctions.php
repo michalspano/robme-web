@@ -3,9 +3,9 @@
     {
         return pow($base, $exponent);
     }
-    function logFunction($exponent, $base)
+    function logFunction($arg, $base)
     {
-        return log($exponent, $base);
+        return log($arg, $base);
     }
     function factorialFunction($exponent)
     {
