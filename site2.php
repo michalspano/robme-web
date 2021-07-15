@@ -56,10 +56,10 @@
         echo "<hr>";
     ?>
     <?php
-        // And operator - &&;
-        // Or operator - ||;
+        /* And operator - &&;
+        Or operator - ||;
+        Negation '!statement'; */
 
-        // Negation '!statement';
         if (!$isTall)
         {
             //TO-DO... if var is false;
@@ -111,7 +111,6 @@
             case "B":
                 echo "You did pretty good!";
                 break;
-
             // Different values...
             case "F":
                 echo "You did poorly!";
@@ -145,6 +144,27 @@
         {
             echo "$myList[$i] <br>";
         }
+    ?>
+    <?php
+        // Html header and footer files inclusion via 'include';
+        include "header.html";
+        echo "<p>This is a test note </p>";
+        include "footer.html";
+    ?>
+    <?php
+        // Include a php file;
+        // Access variables from a local php file;
+        // Using dynamic php;
+        $title = "My first blog post";
+        $author = "Michal";
+        $wordCount = 500;
+        include "test.php";
+        echo "<hr>";
+
+        // Include functions from a local php file;
+        include "func.php";
+        $result = myPowerFunction(5, 5);
+        echo "<p> $result </p>";
     ?>
 
     </body>

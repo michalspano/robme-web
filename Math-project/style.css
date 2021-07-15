@@ -1,0 +1,10 @@
+html
+{
+    background: lightgreen;
+}
+h1, h2, p
+{
+    text-align: center;
+    color: darkgreen;
+    font-family: Damascus;
+}
