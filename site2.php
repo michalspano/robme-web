@@ -22,14 +22,14 @@
         echo "<hr>";
     ?>
     <h1> Functions in php! </h1>
-    <p> Making a simple calculator </p>
+    <p> A simple calculator </p>
     <form action="site2.php" method="post">
-        Number 1: <input type="number" name="num1">
-        Number 2: <input type="number" name="num2">
+        Number 1: <input type="number" step="0.001" name="num1">
+        Number 2: <input type="number" step="0.001" name="num2">
         Operation: <input type="text" name="op">
-        <input type="submit">
+        <input type="submit" value="Done!">
     </form>
-    Output: <?php
+    <?php
         $num1 = $_POST["num1"];
         $num2 = $_POST["num2"];
         $operator = $_POST["op"];
@@ -46,10 +46,53 @@
                     return $n1 * $n2;
                 case "/":
                     return $n1 / $n2;
+                default:
+                    echo "Invalid operator";
+                    return;
             }
         }
-        $result = round(mathFunctionHandler($num1, $num2, $operator), 2);
-        echo "<p> $num1 $operator $num2 = <b>$result</b></p>";
+        $result = round(mathFunctionHandler($num1, $num2, $operator), 5);
+        echo "<p> Output: $num1 $operator $num2 = <b><i>$result</i></b></p>";
+        echo "<hr>";
+    ?>
+    <?php
+        // And operator - &&;
+        // Or operator - ||;
+
+        // Negation '!statement';
+        if (!$isTall)
+        {
+            //TO-DO... if var is false;
+        }
+        else
+        {
+            //TO-DO... if var is true;
+        }
+        $isMale = false;
+        $isTall = false;
+
+        // Conditions
+        if ($isMale && $isTall)
+        {
+            echo "You are a tall male.";
+        }
+        elseif ($isMale || $isTall)
+        {
+            echo "You are either tall or a male.";
+        }
+        else
+        {
+            echo "You are neither tall nor a male.";
+        }
+        echo "<hr>";
+    ?>
+    <?php
+        function getMax($num1, $num2, $num3)
+        {
+            return max($num1, $num2, $num3);
+        }
+        $output = getMax(1, 100, 3);
+        echo "Max value is: $output";
     ?>
     </body>
     <script src="secondaryScript.ts"></script>
