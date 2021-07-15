@@ -94,6 +94,59 @@
         $output = getMax(1, 100, 3);
         echo "Max value is: $output";
     ?>
+    <h1> Switch statement </h1>
+    <p> A simple switcht statement integration</p>
+    <form action="site2.php" method="post">
+        Grade: <input type="text" name="grade">
+        <input type="submit" name="Done">
+    </form>
+    Prompt: <?php
+        $grade = $_POST["grade"];
+        // Swtich statement in Php
+        switch ($grade)
+        {
+            case "A":
+                echo "You did very well!";
+                break;
+            case "B":
+                echo "You did pretty good!";
+                break;
+
+            // Different values...
+            case "F":
+                echo "You did poorly!";
+                break;
+            default:
+                echo "Error! No grade was written!";
+                break;
+        }
+        echo "<hr>";
+    ?>
+    <h1> While loops </h1>
+    <?php
+        // While loop
+        $index = 6;
+        do
+        {
+            echo "$index <br>";
+            $index++;
+        }
+        while ($index <= 10); // Do while loop
+        echo "<hr>";
+    ?>
+    <h1> For loops </h1>
+    <?php
+        $myList = [];
+        for ($j = 0; $j < 10; $j++)
+        {
+            array_push($myList, random_int(100, 200));
+        }
+        for ($i = 0; $i < count($myList); $i++)
+        {
+            echo "$myList[$i] <br>";
+        }
+    ?>
+
     </body>
     <script src="secondaryScript.ts"></script>
 </htmt>
