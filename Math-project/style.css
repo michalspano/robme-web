@@ -8,3 +8,7 @@ h1, h2, p
     color: darkgreen;
     font-family: Damascus;
 }
+form
+{
+    text-align: center;
+}
