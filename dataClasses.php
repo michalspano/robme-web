@@ -117,9 +117,11 @@
         ?>
         <?php
             // Inheritance;
+            // Think about '$this' as 'self' in Py; inheritance module
             class Chef
             {
-                public $name;
+                // Private ('Protected'); shared within extended class
+                protected $name;
 
                 function __construct()
                 {
