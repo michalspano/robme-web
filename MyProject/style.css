@@ -1,0 +1,53 @@
+/*
+Global scope document root;
+*/
+:root
+{
+    /* Default color specified for this site; */
+    --defaultColor: #5F9EA0FF;
+    --backgroundColor: #ADD8E6FF;
+}
+html {
+    background: var(--backgroundColor);
+}
+/*
+Alignment, font (color);
+*/
+h1, h3, p
+{
+    text-align: center;
+    color: var(--defaultColor);
+    font-family: Hack;
+}
+.customForm
+{
+    text-align: center;
+}
+/*
+Edit the size of form buttons;
+1. Type submit, 2. Type reset;
+*/
+input[type=submit], input[type=reset]
+{
+    width: 120px;
+    height: 30px;
+    color: var(--defaultColor);
+}
+/*
+Smaller input textfield for mark value;
+*/
+input[type=number]
+{
+    width: 50;
+    height: 30;
+    color: var(--defaultColor);
+}
+/*
+Wider input textfield for student's name;
+*/
+input[type=text]
+{
+    width: 100;
+    height: 30;
+    color: var(--defaultColor);
+}
