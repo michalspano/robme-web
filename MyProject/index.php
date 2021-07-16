@@ -18,8 +18,8 @@
     </div>
     <?php
         // Receive values from the form
-        $userName = $_POST["student"];
-        $userMarkValue = $_POST["mark"];
+        // Using a dict. with key(s) and its value(s);
+        $myDict = ["student"=>$_POST["student"], "mark"=>$_POST["mark"]];
     ?>
     <?php
         // Class data module;
@@ -74,7 +74,7 @@
             }
         }
         // Creates a class instance;
-        $studentInstance1 = new ModofiedStudent($userName, $userMarkValue);
+        $studentInstance1 = new ModofiedStudent($myDict["student"], $myDict["mark"]);
         // Calls the specifies method of a class (or subclass);
         $studentInstance1->displayModified();
 

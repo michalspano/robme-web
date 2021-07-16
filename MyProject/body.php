@@ -2,7 +2,7 @@
 function displayHeader()
 {
     // Displays the header of the website;
-    echo "<h1>This is a test project website </h1>";
+    echo "<br><h1>This is a test project website </h1>";
     echo "<p><b>Main aim:<b> practise classes, methods and data inheritance</p><hr>";
 }
 
