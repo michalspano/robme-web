@@ -113,6 +113,55 @@
             }
             $avengers = new Movie("Avengers", "Dog");
             echo $avengers->getRating();
+            echo "<hr>";
+        ?>
+        <?php
+            // Inheritance;
+            class Chef
+            {
+                public $name;
+
+                function __construct()
+                {
+                    $this->name = "default chef";
+                }
+                function makeChicken()
+                {
+                    echo "<p>The $this->name makes chicken </p>";
+                }
+                function makeSalad()
+                {
+                    echo "<p>The $this->name makes a salad </p>";
+                }
+                function makeSpecialDish()
+                {
+                    echo "<p>The $this->name makes BBQ ribs </p>";
+                }
+            }
+            // ItalianChef inherits all methods from the default chef
+            class ItalianChef extends Chef
+            {
+                function __construct()
+                {
+                    $this->name = "Italian chef";
+                }
+                function makePasta()
+                {
+                    echo "<p>The $this->name makes pasta</p>";
+                }
+                // Overriding an already defined class;
+                function makeSpecialDish()
+                {
+                    echo "<p>The $this->name makes chicken parm</p>";
+                }
+            }
+            // Calls the default chef;
+            $chef = new Chef();
+            $chef->makeSpecialDish();
+
+            // Calls the specialized chef;
+            $italianChef = new ItalianChef();
+            $italianChef->makeSpecialDish();
         ?>
     </body>
 </html>
