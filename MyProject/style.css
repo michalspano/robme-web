@@ -8,6 +8,9 @@ NOTE: Using '%' layer transforms -> reactive env.
     --defaultColor: #5F9EA0FF;
     --backgroundColor: #ADD8E6FF;
     --shadowColor: #d6faff;
+
+    /* Default shadow preferences; */
+    --shadow: 2.5px 2.5px 2.5px;
 }
 html {
     background: var(--backgroundColor);
@@ -30,27 +33,24 @@ h1, h3, p
     text-align: center;
 }
 /*
-Edit the size of form buttons;
-1. Type submit, 2. Type reset;
+Defulat preferences for all types of inputs;
 */
-input[type=submit], input[type=reset]
+input[type=submit], input[type=reset], input[type=number], input[type=text]
 {
     width: 12%;
     height: 20px;
-    color: var(--defaultColor);
-    box-shadow: 2.5px 2.5px 5px var(--shadowColor);
     border-radius: 5px;
+    color: var(--defaultColor);
+    box-shadow: var(--shadow) var(--shadowColor);
 }
 /*
+Editing individual settings;
 Smaller input textfield for mark value;
 */
 input[type=number]
 {
     width: 5%;
     height: 20px;
-    color: var(--defaultColor);
-    box-shadow: 2.5px 2.5px 5px var(--shadowColor);
-    border-radius: 5px;
 }
 /*
 Wider input textfield for student's name;
@@ -59,9 +59,6 @@ input[type=text]
 {
     width: 10%;
     height: 20px;
-    color: var(--defaultColor);
-    box-shadow: 2.5px 2.5px 5px var(--shadowColor);
-    border-radius: 5px;
 }
 /*
 Changes the settings of a <hr> tag
