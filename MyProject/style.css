@@ -46,19 +46,19 @@ input[type=submit], input[type=reset], input[type=number], input[type=text]
 /*
 Editing individual settings;
 Smaller input textfield for mark value;
+Overriding defaul settings;
 */
 input[type=number]
 {
     width: 5%;
-    height: 20px;
 }
 /*
 Wider input textfield for student's name;
+Overriding defaul settings;
 */
 input[type=text]
 {
     width: 10%;
-    height: 20px;
 }
 /*
 Changes the settings of a <hr> tag
