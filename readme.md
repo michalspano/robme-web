@@ -8,20 +8,19 @@ Pomocou týchto príkazov (v príkazovom riadku alebo inom itegrovanom prostred�
    $ php -S localhost:'$XXXX'
    ```
 
-*`XXXX` poukazuje na kód tzv. `localhost-u`.
-
+    *`XXXX` poukazuje na kód tzv. `localhost-u`.
 O konfigurovaní __localhost-u__ si môžete prečítať viac [tu][LINK2].
 
 2. V príkazovom riadku vidíme tzv. `Document root`, ktorý poukazuje na [scope][LINK3],
 resp. miesto, odkiaľ vieme načítať kód a slúži ako "najvyšší" súbor štruktúrovanej hierarchie súborov.
-![command-line1][Photo1]
+<br><br>![command-line1][Photo1]
 
 3. A teraz sa pozrime do nášho prehliadača! <br>
 Prepíšme náš zvolený `localhost` do vyhľadávecej lišty.
 
     `localhost:4000` možno chápať ako náhradu za náš `Document root` z ktorého môžeme spúšťať `.php` dokumenty. <br><br>![browser][Photo2]<br>
    
-    *V mojom prípade som použil _4000_ pre konfiguráciu __localhostu-u__ (toto číslo sa môžeme odlišovať podľa vaše konfigurácie).<br><br>
+    *V mojom prípade som použil _4000_ pre konfiguráciu __localhostu-u__ (toto číslo sa môžeme odlišovať podľa vaše konfigurácie).
 
     *Ako skušobný `.php` súbor som použil `site.php`. Súbor može mať ľubovoľné meno (pred __.php__ koncovkou).
 Napr: `jozko.php`. <br><br>
