@@ -1,0 +1,73 @@
+/*Edit Header 1*/
+h1 {
+    text-align: center;
+    font-family: monospace;
+    font-size: 25px;
+}
+
+/*Define parent block*/
+.parent {
+    /*Center animation*/
+    margin: auto;
+    margin-top: 250px;
+
+    /*Default prefs*/
+    background-color: aquamarine;
+    width: 400px;
+    height: 400px;
+}
+
+/*Define child block (base class)*/
+.child {
+
+    /*Default prefs*/
+    background-color: teal;
+    width: 100px;
+    height: 100px;
+
+    /* $1 class $2 duration $3 time-function $4 delay*/
+    /*transition: all 1.5s cubic-bezier(0.68,-0.01, 0.26, 1.45);*/
+
+    /*ANIMATION*/
+    animation: loop 5s ease-in-out
+        /*forwards*/ /*alternate*/
+        infinite;
+}
+
+/*Detect hover on parent view*/
+.parent:hover .child {
+    /*Change colors*/
+    /*background-color: green;*/
+
+    /*Transform animation*/
+    /*transform: translateX(300px) translateY(300px); */
+
+    /*PAUSE on hover*/
+    animation-play-state: paused;
+}
+
+/*Keyframes of animation*/
+@keyframes loop {
+    /*
+    INITIAL state of animation
+    set by default in '.child'
+    */
+    25% {
+        transform: translateY(300px);
+    }
+
+    50% {
+        background-color: black;
+        transform: translateX(300px) translateY(300px);
+    }
+
+    75% {
+        transform: translateX(300px);
+    }
+
+    /*END state of animation*/
+    100% {
+        background-color: teal;
+        transform: translateX(0px);
+    }
+}
