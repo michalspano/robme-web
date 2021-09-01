@@ -1,1 +1,9 @@
+# Exclude .idea/ module
 .idea
+
+# Exclude venv and IDE clutter
+.vscode
+venv
+
+# Exclude default binaries
+.DS_Store
