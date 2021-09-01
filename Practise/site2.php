@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<htmt lang="en">
+<html lang="en">
     <head>
         <link rel="stylesheet" href="style2.css">
         <title> This is a secondary website </title>
@@ -8,7 +8,9 @@
     <h1> Dictionaries in php! </h1>
 
     <form action="site2.php" method="post">
-        Input a student's name: <input type="text" name="student">
+        Input a student's name: <label>
+            <input type="text" name="student">
+        </label>
         <input type="submit">
     </form>
     <?php
@@ -24,9 +26,15 @@
     <h1> Functions in php! </h1>
     <p> A simple calculator </p>
     <form action="site2.php" method="post">
-        Number 1: <input type="number" step="0.001" name="num1">
-        Number 2: <input type="number" step="0.001" name="num2">
-        Operation: <input type="text" name="op">
+        Number 1: <label>
+            <input type="number" step="0.001" name="num1">
+        </label>
+        Number 2: <label>
+            <input type="number" step="0.001" name="num2">
+        </label>
+        Operation: <label>
+            <input type="text" name="op">
+        </label>
         <input type="submit" value="Done!">
     </form>
     <?php
@@ -34,7 +42,7 @@
         $num2 = $_POST["num2"];
         $operator = $_POST["op"];
 
-        // Univeral math function
+        // Universal math function
         function mathFunctionHandler($n1, $n2, $op)
         {
             switch ($op) {
@@ -59,6 +67,8 @@
         /* And operator - &&;
         Or operator - ||;
         Negation '!statement'; */
+
+        $isTall = null;
 
         if (!$isTall)
         {
@@ -95,14 +105,16 @@
         echo "Max value is: $output";
     ?>
     <h1> Switch statement </h1>
-    <p> A simple switcht statement integration</p>
+    <p> A simple switch statement integration</p>
     <form action="site2.php" method="post">
-        Grade: <input type="text" name="grade">
+        Grade: <label>
+            <input type="text" name="grade">
+        </label>
         <input type="submit" name="Done">
     </form>
     Prompt: <?php
         $grade = $_POST["grade"];
-        // Swtich statement in Php
+        // Switch statement in Php
         switch ($grade)
         {
             case "A":
@@ -138,7 +150,10 @@
         $myList = [];
         for ($j = 0; $j < 10; $j++)
         {
-            array_push($myList, random_int(100, 200));
+            try {
+                array_push($myList, random_int(100, 200));
+            } catch (Exception $e) {
+            }
         }
         for ($i = 0; $i < count($myList); $i++)
         {
@@ -168,5 +183,5 @@
     ?>
 
     </body>
-    <script src="secondaryScript.ts"></script>
-</htmt>
+    <script src="script.ts"></script>
+</html>

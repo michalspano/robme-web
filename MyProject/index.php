@@ -23,7 +23,7 @@
     ?>
     <?php
         // Class data module;
-        class Student
+        class StudentClass
         {
             // Public var;
             public $mark;
@@ -61,8 +61,8 @@
             }
         }
 
-        // Overrides the Student clas
-        class ModofiedStudent extends Student
+        // Overrides the Student class
+        class ModifiedStudent extends StudentClass
         {
             function displayModified()
             {
@@ -74,7 +74,7 @@
             }
         }
         // Creates a class instance;
-        $studentInstance1 = new ModofiedStudent($myDict["student"], $myDict["mark"]);
+        $studentInstance1 = new ModifiedStudent($myDict["student"], $myDict["mark"]);
         // Calls the specifies method of a class (or subclass);
         $studentInstance1->displayModified();
 

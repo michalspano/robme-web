@@ -1,4 +1,4 @@
-<html>
+<html lang="UK-en">
     <head>
         <link rel="stylesheet" href="style2.css">
         <title> Classes and methods! </title>
@@ -8,7 +8,7 @@
             // Book class (a custom structure);
             class Book
             {
-                // Default datatypes (specification of a data class);
+                // Default data-types (specification of a data class);
                 var $title;
                 var $author;
                 var $pages;
