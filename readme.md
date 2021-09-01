@@ -25,9 +25,11 @@ Prepíšme náš zvolený `localhost` do vyhľadávecej lišty.
     *Ako skušobný `.php` súbor som použil `site.php`. Súbor može mať ľubovoľné meno (pred __.php__ koncovkou).
 Napr: `jozko.php`. <br><br>
 
-    __Poznámka:__ Php dokáže automaticky prepojiť všetky doplnky daného `.php` súboru.
+    __Pripomienky:__ 
+    1. Php dokáže automaticky prepojiť všetky doplnky daného `.php` súboru.
 Napr. __Headers__, __JavaScript funkcie__ alebo __CSS__ stránky.
-Ako indexovať stránku a význam `index.php` [článok][LINK4]. <br><br>
+Ako indexovať stránku a význam `index.php` [článok][LINK4].
+2. Doteraz aplikované kroky možno využiť aj na `.html` súbory alebo iné prvky spojené s __Web vývojom__. <br><br>
 
 4. Konfigurácie prebehla úspešne, veľa šťastia na ceste __Web Development-u__! :blush:
 
