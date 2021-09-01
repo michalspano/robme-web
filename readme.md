@@ -1,7 +1,7 @@
 # Robme web!
 Projekt orientovaný najmä na [`.php`][LINK] web vývoj a jeho doplnky.
 
-## Spustenie Php stránok lokálne
+## Spustenie Php (aj HTML) stránok lokálne
 Pomocou týchto príkazov (v príkazovom riadku alebo inom itegrovanom prostredí):
 
 1. ```shell
@@ -23,13 +23,13 @@ Prepíšme náš zvolený `localhost` do vyhľadávecej lišty.
     *V mojom prípade som použil _4000_ pre konfiguráciu __localhostu-u__ (toto číslo sa môžeme odlišovať podľa vaše konfigurácie).
 
     *Ako skušobný `.php` súbor som použil `site.php`. Súbor može mať ľubovoľné meno (pred __.php__ koncovkou).
-Napr: `jozko.php`. <br><br>
+    Napr: `jozko.php`. <br><br>
 
     __Pripomienky:__ 
     1. Php dokáže automaticky prepojiť všetky doplnky daného `.php` súboru.
-Napr. __Headers__, __JavaScript funkcie__ alebo __CSS__ stránky.
-Ako indexovať stránku a význam `index.php` [článok][LINK4].
-2. Doteraz aplikované kroky možno využiť aj na `.html` súbory alebo iné prvky spojené s __Web vývojom__. <br><br>
+    Napr. __Headers__, __JavaScript funkcie__ alebo __CSS__ stránky.
+    Ako indexovať stránku a význam `index.php` [článok][LINK4].
+    2. Doteraz aplikované kroky možno využiť aj na `.html` súbory alebo iné prvky spojené s __Web vývojom__. <br><br>
 
 4. Konfigurácie prebehla úspešne, veľa šťastia na ceste __Web Development-u__! :blush:
 
