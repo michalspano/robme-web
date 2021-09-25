@@ -5,7 +5,6 @@
         <title>Blink effect with JavaScript</title>
     </head>
     <body>
-        <h1 style="text-align: center;">'Write anything here :-)'</h1>
-        <script src="script.js"></script>
+        <?php include "body.html"; ?>
     </body>
 </html>
