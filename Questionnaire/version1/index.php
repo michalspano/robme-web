@@ -2,7 +2,7 @@
 
 <html lang="en">
     <head>
-        <link href="style.css" rel="stylesheet">
+        <link href="../style.css" rel="stylesheet">
         <title>Questionnaire!</title>
         <script src="script.js"></script>
     </head>
@@ -12,7 +12,7 @@
             <?php include "body.html"?>
         </main>
         <footer>
-            <?php include "footer.html"?>
+            <?php include "../footer.html"?>
         </footer>
     </body>
 </html>
