@@ -1,4 +1,4 @@
-# Robme web!
+# Robme web! [SK] 🇸🇰
 Projekt orientovaný najmä na [`.php`][LINK] web vývoj a jeho doplnky.
 
 ## Spustenie Php (aj HTML) stránok lokálne
