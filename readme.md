@@ -34,7 +34,7 @@ Prepíšme náš zvolený `localhost` do vyhľadávecej lišty.
 4. Konfigurácie prebehla úspešne, veľa šťastia na ceste __Web Development-u__! :blush:
 
 <!-- LINKS -->
-[LINK]: (https://www.php.net)
+[LINK]: https://www.php.net
 [LINK2]: https://www.hostinger.com/tutorials/what-is-localhost
 [LINK3]: https://www.lifewire.com/what-is-a-root-folder-or-root-directory-2625989
 [LINK4]: https://docs.joomla.org/What_is_the_purpose_of_the_index.php_file%3F
