@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+
+            /* Create stylesheet */
+            .center {
+                text-align: center;
+            }
+            .box {
+                margin-top: 50px;
+                margin-right: 25%;
+                margin-left: 25%;
+                background-color: dimgrey;
+                border-radius: 15px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: white;
+            }
+            body {
+                background-color: lightblue;
+            }
+
+        </style>
+        <script>
+            // Check if DOM was loaded
+            document.addEventListener('DOMContentLoaded', function() {
+
+                // Reference input
+                let input = document.querySelector('input');
+
+                // Invoke after key is pressed
+                input.addEventListener('keyup', function(event) {
+
+                    // Load output text
+                    let name = document.querySelector('#output');
+
+                    // Check if input has a value typed in
+                    if (input.value) {
+
+                        // Display value
+                        name.innerHTML = `Hmmm, ${input.value}`;
+                        // Show in console
+                        console.log(input.value);
+                    }
+                    else {
+
+                        // Show empty
+                        name.innerHTML = 'Empty';
+                    }
+                });
+            });
+
+        </script>
+        <title>Write something</title>
+    </head>
+
+    <!-- Body Section-->
+    <body>
+        <p class="center">What goes through your mind...</p>
+        <form class="center">
+            <input autocomplete="off" autofocus placeholder="Thoughts..." type="text">
+        </form>
+        <!-- Show dynamic output-->
+        <p class="center box" id="output"></p>
+    </body>
+</html>
