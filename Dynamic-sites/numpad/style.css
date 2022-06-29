@@ -1,0 +1,29 @@
+.custom-button {
+    border: 0px;
+    width: 100px;
+    height: 100px;
+    font-size: 25px;
+    font-weight: 400;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0.5px #aaa;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.row {
+    padding: 10px;
+    display: block;
+}
+
+#home {
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+
+    width: 500px;
+    height: auto;
+
+    margin-top: 20px;
+    border-radius: 25px;
+    background-color: lightblue;
+    box-shadow: 0px 0px 10.0px rgba(100, 100, 100, 0.25);
+}
