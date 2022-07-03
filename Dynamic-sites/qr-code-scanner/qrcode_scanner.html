@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-EN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+
+    <!-- external scripts -->
+    <script src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style> button { width: 250px; height: 65px; } </style>
+
+    <title>QR Code Scanner</title>
+</head>
+<body>
+    <main>      
+        <div class="jumbotron">
+            <div class="container text-center">
+                <h1>QR Code Scanner</h1>
+            </div>
+        </div>
+        <div class="container text-center">
+            <button id="btn-scan-qr" class="btn">
+                Scan <strong>QR</strong> codes
+            </button><br>
+            <canvas hidden="true" id="qr-canvas"></canvas>
+        </div>
+    </main>
+    <!-- Load the JS script -->
+    <script src="src/script.js"></script>
+</body>
+</html>
