@@ -1,5 +1,8 @@
 # Robme web! [SK] 🇸🇰
+
 Projekt orientovaný najmä na [`.php`][LINK] web vývoj a jeho doplnky.
+
+\*V rámci tohto projektu sú aj rôzne stránky zamerané na `.js` funkcionality, ktoré pridávajú dynamiku stránkam. 
 
 ## Spustenie Php (aj HTML) stránok lokálne
 Pomocou týchto príkazov (v príkazovom riadku alebo inom itegrovanom prostredí):
